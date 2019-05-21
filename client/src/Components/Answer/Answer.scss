@@ -1,0 +1,36 @@
+.answer {
+  $SIZE: 10px;
+  $COLOR: #944384;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1em;
+
+  &__container{
+    border: 2px #b5b5b5 solid;
+    padding: 2em .75em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+  }
+  &__choice {
+    border: 2px $COLOR solid;
+    padding: .7em;
+    border-radius: 50%;
+    height: $SIZE;
+    width: $SIZE;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__letter {
+    color: $COLOR;
+  }
+  &__text{
+    margin-left: 3em;
+    font-size: 1.15em;
+  }
+}
